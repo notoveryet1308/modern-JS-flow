@@ -2,6 +2,8 @@ import Search from './models/Search';
 import Recipe from './models/Recipe';
 
 import * as searchView from './views/searchView';
+import * as recipeView from './views/recipeView';
+
 import {
   elements,
   renderLoader,
@@ -56,6 +58,8 @@ const recipeController = async () => {
     await state.recipe.getRecipe();
     console.log(state.recipe);
     state.recipe.parseIngredients();
+
+    recipeView.renderRecipe(state.recipe);
   }
 }
 

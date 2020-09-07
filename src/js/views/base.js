@@ -4,6 +4,8 @@ export const elements = {
   resultList: document.querySelector('.result-list'),
   resultBox: document.querySelector('.search-result-box'),
   paginationBox: document.querySelector('.pagination-btns'),
+  menuDetailBox: document.querySelector('.menu-detail-box'),
+  otherDetailList: document.querySelector('.other-detail_list')
 };
 
 
